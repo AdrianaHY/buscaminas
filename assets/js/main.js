@@ -44,15 +44,22 @@ for (var i = 0; i < bomba; i++){
 }
 
 function agregarBomba(bomba){
-  for (var i = 0; i < celdasBomba.length; i++){
-    celdasBomba[i].innerHTML= "<img src = assets/bomba.png width='70'>";
+  // for (var i = 0; i < celdasBomba.length; i++){
+  //   celdasBomba[i].innerHTML= "<img src = assets/bomba.png width='70'>";
+  alert("Perdiste!!!! :(");
+  var contenedor = document.getElementById("contenedor");
+  var tabla = document.getElementById("buscaminas");
+
+  contenedor.removeChild(tabla);
+  contenedor.innerHTML = "<img src = assets/bomba-01.gif width= '300'>"
+
 
   }
-  alert("Perdiste!!!! :(");
+
 // cambiarColor();
 // agregarNumeroUno();
 // agregarNumeroDos();
-}
+
 
 //Para las celdas con número uno
 
